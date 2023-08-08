@@ -36,3 +36,29 @@ body {
     overflow: hidden;
     text-align: center;
 }
+
+.choice-container {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#game {
+    display: flex;
+    width: 100%;
+    padding: 20px 40px;
+    flex-direction: inherit;
+}
+
+.choice-letter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.choice-text {
+    display: flex;
+    justify-content: flex-start;
+}
