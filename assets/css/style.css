@@ -13,7 +13,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('//assets/images/hero-image.jpg') no-repeat;
+    background: url(/assets/images/hero-image.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+body h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: relative;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-container {
+    position: relative;
 }
