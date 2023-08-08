@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500&family=Raleway:wght@500&display=swap');
 
+/* CSS RESET PROPERTIES */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,9 @@ body {
 }
 
 body h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(255, 255, 255);
     font-weight: 500;
     position: relative;
@@ -27,6 +32,34 @@ body h1 {
     text-align: center;
 }
 
+/* GAME PLAY AREA */
 .game-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+
+.btn {
+    font-size: 20px;
+    padding: 4px 6px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    background-color: black;
 }
