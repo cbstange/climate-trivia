@@ -21,6 +21,10 @@ body {
     background-position: center;
 }
 
+#question {
+    margin-bottom: 25px;
+}
+
 .container {
     width: 550px;
     height: 49vh;
@@ -46,6 +50,14 @@ body {
     font-size: 20px;
 }
 
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: azure;
+    background-color: rgb(96, 200, 184);
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
+
 #game {
     display: flex;
     width: 100%;
@@ -54,11 +66,11 @@ body {
 }
 
 .choice-letter {
-    display: flex;
-    justify-content: flex-start;
+    padding: 5px 7px;
+    background-color: white;
+    color: black;
 }
 
 .choice-text {
-    display: flex;
-    justify-content: flex-start;
+    padding: 5px 10px;
 }
