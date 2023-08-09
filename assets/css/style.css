@@ -89,10 +89,6 @@ p {
 /* MEDIA QUERIES */
 
 @media(max-width:400px) {
-    .home-container {
-        height: 85vh;
-    }
-
     h1 {
         font-size: 10px;
     }

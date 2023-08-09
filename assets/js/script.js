@@ -1,7 +1,7 @@
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName('choice-text'));
-const questionCountValue = document.getElementById('questionCount');
-const scoreValue = document.getElementById('score');
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+const questionCountValue = document.getElementById("questionCount");
+const scoreValue = document.getElementById("score");
 
 
 let score = 0;
@@ -49,6 +49,12 @@ gameStart = () => {
 };
 
 getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score);
+        // NAVIGATE TO GAME OVER PAGE 
+        return window.location.assign("/over.html");
+    }
+
     questionCounter++;
     questionCountValue.innerText = questionCounter + "/" + MAX_QUESTIONS;
 
@@ -58,15 +64,11 @@ getNewQuestion = () => {
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innerText = currentQuestion['choice' + number];
+        choice.innerText = currentQuestion["choice" + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
 
-    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        // NAVIGATE TO GAME OVER PAGE 
-        return window.location.assign("/over.html");
-    }
 };
 
 choices.forEach(choice => {
