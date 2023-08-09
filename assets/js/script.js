@@ -13,7 +13,7 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "Test question placeholder?",
+        question: "question 1?",
         choice1: "sample one",
         choice2: "sampdddddddle two",
         choice3: "sa;alskdjf",
@@ -21,7 +21,7 @@ let questions = [
         answer: 1
     },
     {
-        question: "Random question",
+        question: "question 2",
         choice1: "samsergfdple one",
         choice2: "sampddddle two",
         choice3: "samddwetewple three",
@@ -29,7 +29,7 @@ let questions = [
         answer: 2
     },
     {
-        question: "another random",
+        question: "question 3",
         choice1: "samplsergfde one",
         choice2: "sample two",
         choice3: "sample three",
