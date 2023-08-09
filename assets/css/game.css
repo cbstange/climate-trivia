@@ -16,9 +16,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../images/hero-image.jpg) no-repeat;
+    background: url('/assets/images/hero-image.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: cenfter;
 }
 
 /* GAME PLAY AREA */
