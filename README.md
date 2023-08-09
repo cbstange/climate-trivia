@@ -19,7 +19,9 @@
   ![Start page](assets/images/readme-home.png)
 - Randomized question: User is not presented the same questiong twice during the current game.
 - "Start Over" button: User can cancel the game and return to the beginning at anytime.
-- Score count and current question out of ten are dynamic based on user's response  ![Game status](assets/images/readme-game-status.png)
+- Score count and current question out of ten are dynamic based on user's response.  ![Game status](assets/images/readme-game-status.png)
+- "Game Over" page displays total correctly answered questions out of ten and a link to learn more about reducing your carbon footprint. 
+- ![Game Over](assets/images/readme-game-over.png)
 
 
 ## Future Features
