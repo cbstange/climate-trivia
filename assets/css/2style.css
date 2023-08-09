@@ -69,6 +69,27 @@ p {
     padding: 10px 20px;
 }
 
+#play-btn {
+    background: rgb(234, 230, 230);
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    font-size: 17px;
+    border: 0;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+}
+
+#play-btn:hover {
+    box-shadow: 5px 5px;
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
+
 /* MEDIA QUERIES */
 
 @media(max-width:420px) {

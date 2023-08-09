@@ -74,6 +74,20 @@ body {
     border-radius: 8px;
     cursor: pointer;
     display: flex;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.select-btns:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px;
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
 }
 
 #next-btn {
