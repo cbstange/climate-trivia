@@ -1,5 +1,8 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const questionCountValue = document.getElementById('questionCount');
+const scoreValue = document.getElementById('score');
+
 
 let score = 0;
 let currentQuestion = {};
@@ -36,6 +39,7 @@ let questions = [
 ];
 
 const MAX_QUESTIONS = 3;
+const POINT_VALUE = 1;
 
 gameStart = () => {
     questionCounter = 0;
@@ -46,6 +50,8 @@ gameStart = () => {
 
 getNewQuestion = () => {
     questionCounter++;
+    questionCountValue.innerText = questionCounter + "/" + MAX_QUESTIONS;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -66,19 +72,28 @@ getNewQuestion = () => {
 choices.forEach(choice => {
     choice.addEventListener("click", (e) => {
         const userChoice = e.target;
-        const selectedAnswer = userChoice.dataset['number'];
+        const selectedAnswer = userChoice.dataset["number"];
 
         const applyClass =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+            selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+            if (applyClass === "correct") {
+                incrementScore(POINT_VALUE);
+            }
 
         userChoice.parentElement.classList.add(applyClass);
 
         setTimeout(() => {
             userChoice.parentElement.classList.remove(applyClass);
             getNewQuestion();
-        }, 2000);
+        }, 1500);
 
     });
 });
+
+incrementScore = num => {
+    score =+ num;
+    scoreValue.innerText = score;
+};
 
 gameStart();
