@@ -46,7 +46,10 @@ body {
 
 .quiz h1 {
     margin-bottom: 14px;
+    text-align: center;
 }
+
+/* BUTTONS */
 
 .btn {
     background: rgb(16, 15, 15);
@@ -85,7 +88,7 @@ body {
     transition: transform 180ms;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: white;
     color: black;
 }
@@ -98,4 +101,12 @@ body {
 #answer-buttons {
     display: flex;
     flex-direction: column;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
 }
