@@ -75,3 +75,24 @@ body {
     padding: 5px 10px;
     width: 100%;
 }
+
+/* BUTTONS */
+
+.btn {
+    font-size: 20px;
+    padding: 4px 6px;
+    width: 50px;
+    /* margin-bottom: 50px; */ .
+    color: black;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: azure;
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
