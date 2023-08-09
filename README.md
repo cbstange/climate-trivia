@@ -10,5 +10,30 @@
 
 ## Planning
 
-Before starting the project, I went through my old photos of living in Vienna for inspiration and also researched a number of Vienna travel websites. I used Balsamiq to create a
-[wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf)  and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) which can be found in the planning folder in "assets".
+Before starting the project I also created a
+[wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf)  and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) which can be found in the credits below.
+
+## Credits
+
+### Media
+
+- Images were sourced from [Unsplash](https://unsplash.com/) which is a site that provides free images so there are no copywrite violations.
+- Icons were obtained by [Font Awesome](https://fontawesome.com/).
+  
+  
+### Development
+  - GIT was used for version control.
+  - CodeAnywhere was the IDE used for development.
+
+### Content
+
+- Fonts were sourced from [Google Fonts.](https://fonts.google.com/)
+- Text and background colors were sourced from [Coolors.](https://coolors.co/)
+- Quiz questions were used from the following sources:
+  - [Earch Science Communications](https://climatekids.nasa.gov/trivia/).
+  - [Gwendolyn MS via Quizizz](https://quizizz.com/admin/quiz/5c53a440922bc3001aad4332/human-impact-and-climate-change)
+  - [United Nations](https://www.un.org/en/climatechange/science/climate-issues/water?gclid=CjwKCAjw8symBhAqEiwAaTA__Ms_NOFVcvk8jnfIt2p-OJrMCG8CyQIhx3O1gcv4USdn_Wto99yS7hoCWpcQAvD_BwE)
+- Basic Javascript logic for the game was inspired by a [YouTube](https://www.youtube.com/watch?v=zZdQGs62cR8) tutorial by "James Q Quick".
+- CSS reset properites sourced from [Meyer Web](http://meyerweb.com/eric/tools/css/reset/).
+- Wireframes were created using [Balsamiq](https://balsamiq.com/).
+- Flowchart was created using [Lucid Chart](https://lucidchart.com/).
