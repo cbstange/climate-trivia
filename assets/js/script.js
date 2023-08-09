@@ -38,7 +38,7 @@ let questions = [
     }
 ];
 
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 const POINT_VALUE = 1;
 
 gameStart = () => {
@@ -50,7 +50,7 @@ gameStart = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score);
+        localStorage.setItem("mostRecentScore", score);
         // NAVIGATE TO GAME OVER PAGE 
         return window.location.assign("/over.html");
     }
