@@ -1,101 +1,117 @@
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice-text"));
-const questionCountValue = document.getElementById("questionCount");
-const scoreValue = document.getElementById("score");
-
-
-let score = 0;
-let currentQuestion = {};
-let questionCounter = 0;
-let availableQuestions = [];
-
-// QUESTIONS ARRAY
-
-let questions = [
+const questions = [
     {
-        question: "The animal agriculture industy uses what percent of the global available freshwater?",
-        choice1: "70%",
-        choice2: "20%",
-        choice3: "5%",
-        choice4: "50%",
-        answer: 1
+        question: " which is larger?",
+        answers: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+        ],
     },
     {
-        question: "question 2",
-        choice1: "samsergfdple one",
-        choice2: "sampddddle two",
-        choice3: "samddwetewple three",
-        choice4: "sample four",
-        answer: 2
+        question: " which is largest desert?",
+        answers: [
+            { text: "kalh", correct: false },
+            { text: "gobi ", correct: false },
+            { text: "sahara", correct: false },
+            { text: "north pole", correct: true },
+        ],
     },
     {
-        question: "question 3",
-        choice1: "samplsergfde one",
-        choice2: "sample two",
-        choice3: "sample three",
-        choice4: "sample four",
-        answer: 3
-    }
+        question: " which is smallest continent?",
+        answers: [
+            { text: "asia", correct: false },
+            { text: "austria", correct: true },
+            { text: "africa", correct: false },
+            { text: "arctoc", correct: false },
+        ],
+    },
 ];
 
-const MAX_QUESTIONS = 10;
-const POINT_VALUE = 1;
+// CONSTANTS 
 
-gameStart = () => {
-    questionCounter = 0;
+const questionElement = document.getElementById("question");
+const learnMore = document.getElementById("learn-more");
+const answerButtons = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next-btn");
+
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz() {
+    currentQuestionIndex = 0;
     score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-};
+    nextButton.innerHTML = "Next";
+    showQuestion();
+}
 
-getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem("mostRecentScore", score);
-        // NAVIGATE TO GAME OVER PAGE 
-        return window.location.assign("/over.html");
+function showQuestion(){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
+
+function resetState(){
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
     }
+}
 
-    questionCounter++;
-    questionCountValue.innerText = questionCounter + "/" + MAX_QUESTIONS;
-
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-
-    choices.forEach(choice => {
-        const number = choice.dataset["number"];
-        choice.innerText = currentQuestion["choice" + number];
+function selectAnswer(e){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct");
+        score++;
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
     });
+    nextButton.style.display = "block";
+}
 
-    availableQuestions.splice(questionIndex, 1);
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    learnMore.innerHTML = `To learn more about what you can do to lessen your impact, click here.`;
+    learnMore.style.display = "block";
+}
 
-};
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    }else {
+        showScore();
+    }
+}
 
-choices.forEach(choice => {
-    choice.addEventListener("click", (e) => {
-        const userChoice = e.target;
-        const selectedAnswer = userChoice.dataset["number"];
-
-        const applyClass =
-            selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-
-            if (applyClass === "correct") {
-                incrementScore(POINT_VALUE);
-            }
-
-        userChoice.parentElement.classList.add(applyClass);
-
-        setTimeout(() => {
-            userChoice.parentElement.classList.remove(applyClass);
-            getNewQuestion();
-        }, 1500);
-
-    });
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }else{
+        startQuiz();
+    }
 });
 
-incrementScore = num => {
-    score =+ num;
-    scoreValue.innerText = score;
-};
+startQuiz();
 
-gameStart();

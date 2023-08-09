@@ -21,10 +21,6 @@ body {
     background-position: center;
 }
 
-#question {
-    margin-bottom: 25px;
-}
-
 /* GAME PLAY AREA */
 
 .container {
@@ -43,87 +39,97 @@ body {
     text-align: inherit;
 }
 
-#score {
-    display: none;
-}
-
-.score {
-    display: none;
-}
-
-.choice-container {
-    display: flex;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 20px;
-}
-
-.choice-container:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px;
-    color: black;
-    transform: translateY(2px);
-    transition: transform 180ms;
-}
-
-#game {
-    display: flex;
-    width: 100%;
-    padding: 20px 40px;
-    flex-direction: inherit;
-}
-
-.choice-letter {
-    padding: 5px 7px;
-    background-color: white;
-    color: black;
-}
-
-.choice-text {
-    padding: 5px 10px;
+.quiz {
+    padding: 20px;
     width: 100%;
 }
 
-/* CLASSES FOR CORRECT OR INCORRECT CHOICE */
-
-.correct {
-    background-color: rgba(30, 165, 30, 0.739);
-}
-
-.incorrect {
-    background-color: rgba(227, 61, 61, 0.739);
+.quiz h1 {
+    margin-bottom: 14px;
+    text-align: center;
 }
 
 /* BUTTONS */
 
 .btn {
+    background: rgb(16, 15, 15);
+    color: rgb(234, 230, 230);
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid rgb(234, 230, 230);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
     font-size: 20px;
-    padding: 4px 6px;
-    width: 50px;
-    margin-bottom: 50px;
-    color: black;
-    text-align: center;
-    background-color: white;
-    text-decoration: none;
+}
+
+.select-btns {
+    background: rgb(234, 230, 230);
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    font-size: 17px;
+    border: 0;
+    padding: 8px 20px;
+    margin: 20px auto 0;
     border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
 }
 
-#start-over-btn {
-    text-align: center;
-    margin: 10px;
-}
-
-.btn:hover {
+.select-btns:hover {
     cursor: pointer;
     box-shadow: 5px 5px;
     transform: translateY(2px);
     transition: transform 180ms;
 }
 
-#game-status {
+.btn:hover:not([disabled]) {
+    background: white;
+    color: black;
+}
+
+#next-btn {
+    cursor: pointer;
+    display: none;
+}
+
+#answer-buttons {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+}
+
+#learn-more {
+    background: rgb(234, 230, 230);
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    font-size: 17px;
+    border: 0;
+    padding: 8px 20px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    display: none;
+}
+
+#learn-more:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px;
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
 }
