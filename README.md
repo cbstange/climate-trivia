@@ -11,38 +11,32 @@
 ## Planning
 
 - Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) to visualize the user journey - these documents  can be found in the credits below.
-- Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and 
-- human impact. These sources are found below in the credits section.
+- Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and human impact. These sources are found below in the credits section.
 
 ## Existing Features
 - Start Page with introduction and play button
   
 ![Start page](assets/images/readme-home.png)
-  
-- Randomized question: User is not presented the same questiong twice during the current game.
+- Color of the answer selection turns green or red depending on if it is correct or incorrect. If the user chooses an incorrect answer, the correct answer is highlighted in green.
+- Once user selects an answer, the "next button" appears and the user cannot change their answer,
 
-- Color of the answer selection turns green or red depending on if it is correct or incorrect - the question count and score are then updated.
-
-![Game play](assets/images/readme-play.png)
+![Game Play](assets/images/readme-play.png)
 
 - "Start Over" button: User can cancel the game and return to the beginning at anytime.
 
-- Score count and current question out of ten are dynamic based on user's response.  
- 
-![Game status](assets/images/readme-game-status.png)
-
-- "Game Over" page displays total correctly answered questions out of ten and a link to learn more about reducing your carbon footprint. 
+- Quiz finished: Correctly answered questions out of total questions are displayed Game Over" page displays totaQ reducing your carbon footprint. 
 
 ![Game Over](assets/images/readme-game-over.png)
 
 
 ## Future Features
 - Option to create a username.
+- Randomize questions.
 - List of the most recent high scores with associated username.
 - Pull questions from a trivia API instead of hard-coding questions manually.
 
 ## Testing & Bugs
-
+- 
 
 ## Validator Testing
 
