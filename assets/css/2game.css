@@ -103,6 +103,29 @@ body {
     flex-direction: column;
 }
 
+#learn-more {
+    background: rgb(234, 230, 230);
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    font-size: 17px;
+    border: 0;
+    padding: 8px 20px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    display: none;
+}
+
+#learn-more:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px;
+    transform: translateY(2px);
+    transition: transform 180ms;
+}
+
 .correct {
     background: #9aeabc;
 }

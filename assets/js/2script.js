@@ -31,6 +31,7 @@ const questions = [
 // CONSTANTS 
 
 const questionElement = document.getElementById("question");
+const learnMore = document.getElementById("learn-more");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
@@ -91,6 +92,8 @@ function selectAnswer(e){
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    learnMore.innerHTML = `To learn more about what you can do to lessen your impact, click here.`;
+    learnMore.style.display = "block";
 }
 
 function handleNextButton() {
