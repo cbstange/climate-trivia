@@ -73,9 +73,11 @@ choices.forEach(choice => {
 
         userChoice.parentElement.classList.add(applyClass);
 
-        // userChoice.parentElement.classlist.remove(applyClass);
+        setTimeout(() => {
+            userChoice.parentElement.classList.remove(applyClass);
+            getNewQuestion();
+        }, 2000);
 
-        getNewQuestion();
     });
 });
 
