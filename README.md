@@ -10,13 +10,18 @@
 
 ## Planning
 
-Before starting the project I also created a
-[wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf)  and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) which can be found in the credits below.
+Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) which can be found in the credits below.
+
+## Existing Features
+- ### Navigation Bar
+
+  - Featured on all four pages, the navigation bar is fully responsive and includes a image that brings you back to the home screen and links for all other pages: Attractions, Restaurants and Outdoors.
+  - The navigation bar's structure is meant to be familiar to users: when a user visits the site, it is clear how to navigate each page.
+  - To add to usability, a hover effect was added so there is feedback to the user has they choose which page to visit.
+
 
 ## Credits
-
 ### Media
-
 - Images were sourced from [Unsplash](https://unsplash.com/) which is a site that provides free images so there are no copywrite violations.
 - Icons were obtained by [Font Awesome](https://fontawesome.com/).
   
@@ -26,7 +31,6 @@ Before starting the project I also created a
   - CodeAnywhere was the IDE used for development.
 
 ### Content
-
 - Fonts were sourced from [Google Fonts.](https://fonts.google.com/)
 - Text and background colors were sourced from [Coolors.](https://coolors.co/)
 - Quiz questions were used from the following sources:
