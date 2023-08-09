@@ -25,6 +25,8 @@ body {
     margin-bottom: 25px;
 }
 
+/* GAME PLAY AREA */
+
 .container {
     width: 550px;
     height: auto;
@@ -82,7 +84,7 @@ body {
     font-size: 20px;
     padding: 4px 6px;
     width: 50px;
-    /* margin-bottom: 50px; */ .
+    margin-bottom: 50px; 
     color: black;
     text-align: center;
     background-color: white;

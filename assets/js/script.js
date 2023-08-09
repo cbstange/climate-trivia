@@ -43,10 +43,6 @@ gameStart = () => {
 };
 
 getNewQuestion = () => {
-    // if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-
-    //     return window.location.assign("over.html");
-    // }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -58,6 +54,11 @@ getNewQuestion = () => {
     });
 
     availableQuestions.splice(questionIndex, 1);
+
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        // NAVIGATE TO GAME OVER PAGE 
+        return window.location.assign("/over.html");
+    }
 };
 
 choices.forEach(choice => {
