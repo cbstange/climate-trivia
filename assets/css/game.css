@@ -43,6 +43,14 @@ body {
     text-align: inherit;
 }
 
+#score {
+    display: none;
+}
+
+.score {
+    display: none;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 20px;
@@ -116,6 +124,6 @@ body {
 
 #game-status {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
