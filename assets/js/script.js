@@ -35,6 +35,8 @@ let questions = [
     }
 ];
 
+const MAX_QUESTIONS = 3;
+
 gameStart = () => {
     questionCounter = 0;
     score = 0;
@@ -55,16 +57,23 @@ getNewQuestion = () => {
 
     availableQuestions.splice(questionIndex, 1);
 
-    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // NAVIGATE TO GAME OVER PAGE 
         return window.location.assign("/over.html");
     }
 };
 
 choices.forEach(choice => {
-    choice.addEventListener("click", e => {
+    choice.addEventListener("click", (e) => {
         const userChoice = e.target;
-        const selectedAnswer = userChoice.dataset["number"];
+        const selectedAnswer = userChoice.dataset['number'];
+
+        const applyClass =
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        userChoice.parentElement.classList.add(applyClass);
+
+        // userChoice.parentElement.classlist.remove(applyClass);
 
         getNewQuestion();
     });
