@@ -44,21 +44,44 @@ body {
     width: 100%;
 }
 
+.quiz h1 {
+    margin-bottom: 14px;
+}
+
 .btn {
-  background: #fff;
-  color: #222;
-  font-weight: 500;
-  width: 100%;
-  border: 1px solid #222;
-  padding: 10px;
-  margin: 10px 0;
-  text-align: left;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s;
+    background: rgb(16, 15, 15);
+    color: rgb(234, 230, 230);
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid rgb(234, 230, 230);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 20px;
+}
+
+.select-btns {
+    background: rgb(234, 230, 230);
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    font-size: 17px;
+    border: 0;
+    padding: 8px 20px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+}
+
+#next-btn {
+    cursor: pointer;
+    display: none;
 }
 
 #answer-buttons {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
