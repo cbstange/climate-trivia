@@ -15,9 +15,11 @@
 - human impact. These sources are found below in the credits section.
 
 ## Existing Features
-- Start Page with intro and play button
+- Start Page with introduction and play button
   ![Start page](assets/images/readme-home.png)
 - Randomized question: User is not presented the same questiong twice during the current game.
+- Color of the answer selection turns green or red depending on if it is correct or incorrect - the question count and score are then updated.
+- ![Game play](assets/images/readme-play.png)
 - "Start Over" button: User can cancel the game and return to the beginning at anytime.
 - Score count and current question out of ten are dynamic based on user's response.  ![Game status](assets/images/readme-game-status.png)
 - "Game Over" page displays total correctly answered questions out of ten and a link to learn more about reducing your carbon footprint. 
@@ -27,6 +29,7 @@
 ## Future Features
 - Option to create a username.
 - List of the most recent high scores with associated username.
+- Pull questions from a trivia API instead of hard-coding questions manually.
 
 ## Testing & Bugs
 

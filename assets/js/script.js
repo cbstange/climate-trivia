@@ -13,11 +13,11 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "question 1?",
-        choice1: "sample one",
-        choice2: "sampdddddddle two",
-        choice3: "sa;alskdjf",
-        choice4: "sample four",
+        question: "The animal agriculture industy uses what percent of the global available freshwater?",
+        choice1: "70%",
+        choice2: "20%",
+        choice3: "5%",
+        choice4: "50%",
         answer: 1
     },
     {
