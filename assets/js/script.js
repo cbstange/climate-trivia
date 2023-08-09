@@ -91,7 +91,7 @@ function selectAnswer(e){
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You answered ${score} out of ${questions.length} questions correctly!`;
     learnMore.innerHTML = `To learn more about what you can do to lessen your impact, click here.`;
     learnMore.style.display = "block";
 }

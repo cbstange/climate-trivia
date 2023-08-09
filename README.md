@@ -11,7 +11,7 @@
 ## Planning
 
 - Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) to visualize the user journey - these documents  can be found in the credits below.
-- Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and human impact. These sources are found below in the credits section.
+- Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and human impact. These sources can be found below in the credits section.
 
 ## Existing Features
 - Start Page with introduction and play button
@@ -24,7 +24,7 @@
 
 - "Start Over" button: User can cancel the game and return to the beginning at anytime.
 
-- Quiz finished: Correctly answered questions out of total questions are displayed Game Over" page displays totaQ reducing your carbon footprint. 
+- Quiz finished: Correctly answered questions out of total questions are displayed and a link to learn more about reducing carbon footprint appears.
 
 ![Game Over](assets/images/readme-game-over.png)
 
@@ -36,7 +36,9 @@
 - Pull questions from a trivia API instead of hard-coding questions manually.
 
 ## Testing & Bugs
+- With each new JavaScript addition, console.log was performed to confirm expected behavior.
 - 
+- After multiple failed attempts at randomizing the question generated, the feature was pended for a future version.
 
 ## Validator Testing
 
