@@ -2,7 +2,7 @@
 
 # Climate Trivia
 
-### The Climate Triva Quiz is designed to test the user's knowledge of the environmental impact humans have on the earth's climate. The quiz presents the user with a random question displaying four possible answers with only one being correct. The game stops at 10 questions and 
+### The Climate Triva Quiz is designed to test the user's knowledge of the environmental impact humans have on the earth's climate. The quiz presents the user with a random question displaying four possible answers with only one being correct. The game ends at 10 questions and presents a user with the correct number of questions answered.
 
 ## Finished site deployment link can be found [here]().
 
@@ -10,12 +10,16 @@
 
 ## Planning
 
-Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) to visualize the user journey - these documents  can be found in the credits below. 
+- Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) to visualize the user journey - these documents  can be found in the credits below.
+- Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and 
+- human impact. These sources are found below in the credits section.
 
 ## Existing Features
+- Start Page with intro and play button
+  ![Start page](assets/images/readme-home.png)
 - Randomized question: User is not presented the same questiong twice during the current game.
 - "Start Over" button: User can cancel the game and return to the beginning at anytime.
-- 
+- Score count and current question out of ten are dynamic based on user's response  ![Game status](assets/images/readme-game-status.png)
 
 
 ## Future Features

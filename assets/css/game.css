@@ -54,7 +54,7 @@ body {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: azure;
+    box-shadow: 5px 5px;
     color: black;
     transform: translateY(2px);
     transition: transform 180ms;
@@ -109,7 +109,7 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: rgb(72, 96, 6);
+    box-shadow: 5px 5px;
     transform: translateY(2px);
     transition: transform 180ms;
 }

@@ -82,7 +82,7 @@ p {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: azure;
+    box-shadow: 5px 5px;
     transform: translateY(2px);
     transition: transform 180ms;
 }
