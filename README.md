@@ -4,7 +4,7 @@
 
 ### The Climate Triva Quiz is designed to test the user's knowledge of the environmental impact humans have on the earth's climate. The quiz presents the user with a random question displaying four possible answers with only one being correct. The game ends at 10 questions and presents a user with the correct number of questions answered.
 
-## Finished site deployment link can be found [here](https://cbstange.github.io/climate-trivia/)
+## Finished site deployment link can be found [here](https://cbstange.github.io/climate-trivia/).
 
 ![Responsive Mockup](.//assets/images/readme-responsive.png)
 
