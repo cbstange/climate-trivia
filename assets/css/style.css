@@ -66,6 +66,10 @@ p {
     color: green;
 }
 
+#intro-description {
+    font-size: 15px;
+}
+
 /* BUTTONS */
 
 .btn {
