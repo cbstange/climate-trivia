@@ -1,11 +1,11 @@
 const questions = [
     {
-        question: " which is larger?",
+        question: " The animal agriculture industry uses what percent of the global available freshwater?",
         answers: [
-            { text: "Shark", correct: false },
-            { text: "Blue Whale", correct: true },
-            { text: "Elephant", correct: false },
-            { text: "Giraffe", correct: false },
+            { text: "70%", correct: true },
+            { text: "20%", correct: false },
+            { text: "5%", correct: false },
+            { text: "50%", correct: false },
         ],
     },
     {
