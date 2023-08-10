@@ -15,8 +15,9 @@
 - Start Page with introduction and play button
   
 ![Start page](assets/images/readme-home.png)
+- User is presented a random question generated from question bank. 
 - Color of the answer selection turns green or red depending on if it is correct or incorrect. If the user chooses an incorrect answer, the correct answer is highlighted in green.
-- Once user selects an answer, the "next button" appears and the user cannot change their answer,
+- Once user selects an answer, the "next button" appears and the user cannot change their answer.
 
 ![Game Play](assets/images/readme-play.png)
 
@@ -29,7 +30,7 @@
 
 ## Future Features
 - Option to create a username.
-- Randomize questions.
+- Display recent high scores with respective username
 - Pull questions from a trivia API instead of hard-coding questions manually.
 
 ## Testing & Bugs
@@ -69,6 +70,7 @@
 - "Learn more" link on the game over page [COTAP](https://cotap.org/reduce-carbon-footprint/?gclid=CjwKCAjw8symBhAqEiwAaTA__LNqZ277tDAIWwUQsUjMFmC7Dl__nbYg35KHlqZJxUyYVnbahI6dKBoCoC8QAvD_BwE).
 - Basic Javascript logic for the game was inspired by a [YouTube](https://www.youtube.com/watch?v=zZdQGs62cR8) tutorial by "James Q Quick".
 - Color validating for the correct & incorrect answers sourced by a [YouTube](https://www.youtube.com/watch?v=Dk_GMhM6c1w) tutorial by "GreatStack".
+- Code for generating a random question from the question array was suppled by [Stackoverflow](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range) post.
 - CSS reset properites sourced from [Meyer Web](http://meyerweb.com/eric/tools/css/reset/).
 - Wireframes were created using [Balsamiq](https://balsamiq.com/).
 - Flowchart was created using [Lucid Chart](https://lucidchart.com/).
