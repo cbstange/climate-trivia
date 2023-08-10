@@ -32,13 +32,11 @@
 ## Future Features
 - Option to create a username.
 - Randomize questions.
-- List of the most recent high scores with associated username.
 - Pull questions from a trivia API instead of hard-coding questions manually.
 
 ## Testing & Bugs
-- With each new JavaScript addition, console.log was performed to confirm expected behavior.
-- 
-- After multiple failed attempts at randomizing the question generated, the feature was pended for a future version.
+- With each new JavaScript addition, a console.log was performed to confirm expected behavior.
+- A bug was encountered loading the background image, but only when the site was deployed. The issue came down to a missing quotation mark.
 
 ## Validator Testing
 
@@ -53,12 +51,12 @@
 
 #### Accesibility
 -WAVE and Lighthouse were used in Chrome to test accessibility of the site.
+![Lighthouse performance](.//assets/images/readme-lighthouse.png)
 
 ## Credits
 ### Media
 - Images were sourced from [Unsplash](https://unsplash.com/) which is a site that provides free images so there are no copywrite violations.
 - Icons were obtained by [Font Awesome](https://fontawesome.com/).
-  
   
 ### Development
   - GIT was used for version control.
@@ -73,6 +71,7 @@
   - [United Nations](https://www.un.org/en/climatechange/science/climate-issues/water?gclid=CjwKCAjw8symBhAqEiwAaTA__Ms_NOFVcvk8jnfIt2p-OJrMCG8CyQIhx3O1gcv4USdn_Wto99yS7hoCWpcQAvD_BwE)
 - "Learn more" link on the game over page [COTAP](https://cotap.org/reduce-carbon-footprint/?gclid=CjwKCAjw8symBhAqEiwAaTA__LNqZ277tDAIWwUQsUjMFmC7Dl__nbYg35KHlqZJxUyYVnbahI6dKBoCoC8QAvD_BwE).
 - Basic Javascript logic for the game was inspired by a [YouTube](https://www.youtube.com/watch?v=zZdQGs62cR8) tutorial by "James Q Quick".
+- Color validating for the correct & incorrect answers sourced by a [YouTube](https://www.youtube.com/watch?v=Dk_GMhM6c1w) tutorial by "GreatStack".
 - CSS reset properites sourced from [Meyer Web](http://meyerweb.com/eric/tools/css/reset/).
 - Wireframes were created using [Balsamiq](https://balsamiq.com/).
 - Flowchart was created using [Lucid Chart](https://lucidchart.com/).

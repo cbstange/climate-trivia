@@ -95,7 +95,7 @@ p {
     border-radius: 8px;
     cursor: pointer;
     display: flex;
-    text-decoration: non e;
+    text-decoration: none;
     width: fit-content;
 }
 
