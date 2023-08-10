@@ -98,54 +98,58 @@ const learnMore = document.getElementById("learn-more");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
-
 let currentQuestionIndex = 0;
+let currentQuestionNumber = 1;
 let score = 0;
+let currentQuestionArray = [];
 
 function startQuiz() {
-    currentQuestionIndex = 0;
+	currentQuestionArray = [...questions];
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
 
 //CREDIT TO "GREATSTACK" TUTORIAL - LINK FOUND IN README
-
-function showQuestion(){
+// CREDIT STACKOVERFLOW FOR RANDOM INT GENERATION https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
+function showQuestion() {
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+	currentQuestionIndex = Math.floor(
+		Math.random() * (currentQuestionArray.length + 1)
+	);
+    let currentQuestion = currentQuestionArray.pop(currentQuestionIndex);
+    	questionElement.innerHTML =
+		currentQuestionNumber + ". " + currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
+	currentQuestion.answers.forEach((answer) => {
+		const button = document.createElement("button");
+		button.innerHTML = answer.text;
+		button.classList.add("btn");
+		answerButtons.appendChild(button);
+		if (answer.correct) {
+			button.dataset.correct = answer.correct;
+		}
+		button.addEventListener("click", selectAnswer);
+	});
 }
 
-function resetState(){
+function resetState() {
     nextButton.style.display = "none";
-    while (answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function selectAnswer(e){
+function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-    }else{
+    } else {
         selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButtons.children).forEach(button => {
+Array.from(answerButtons.children).forEach((button) => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
@@ -165,16 +169,17 @@ function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
-    }else {
+    } else {
         showScore();
     }
 }
 
 nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    }else{
-        startQuiz();
+    if(currentQuestionArray.length > 0) {
+        currentQuestionNumber++;
+        showQuestion();
+    }else {
+        showScore();
     }
 });
 
