@@ -1,7 +1,6 @@
 # ![Globe icon](.//assets/images/readme-icon.png)
 
 # Climate Trivia
-
 ### The Climate Triva Quiz is designed to test the user's knowledge of the environmental impact humans have on the earth's climate. The quiz presents the user with a random question displaying four possible answers with only one being correct. The game ends at 10 questions and presents a user with the correct number of questions answered.
 
 ## Finished site deployment link can be found [here](https://cbstange.github.io/climate-trivia/).
@@ -9,7 +8,6 @@
 ![Responsive Mockup](.//assets/images/readme-mockup.png)
 
 ## Planning
-
 - Before starting the project I created a [wireframe](.//assets/planning/Climate_Quiz_Wireframe.pdf) and [flowchart](.//assets/planning/Climate_Quiz_Flowchart.pdf) to visualize the user journey - these documents  can be found in the credits below.
 - Some of the questions are custom while others were used from other sources. For the custom questions, I reasearched a number of sources regarding climate change and human impact. These sources can be found below in the credits section.
 
@@ -39,7 +37,6 @@
 - A bug was encountered loading the background image, but only when the site was deployed. The issue came down to a missing quotation mark.
 
 ## Validator Testing
-
 #### HTML
 - No errors were returned when passing through the official W3C validator.
 

@@ -1,3 +1,5 @@
+//HARD COADED QUESTIONS ARRAY
+
 const questions = [
     {
         question: " The animal agriculture industry uses what percent of the global available freshwater?",
@@ -45,6 +47,8 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
+//CREDIT TO "GREATSTACK" TUTORIAL - LINK FOUND IN README
 
 function showQuestion(){
     resetState();
