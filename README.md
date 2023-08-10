@@ -6,7 +6,7 @@
 
 ## Finished site deployment link can be found [here](https://cbstange.github.io/climate-trivia/).
 
-![Responsive Mockup](.//assets/images/readme-responsive.png)
+![Responsive Mockup](.//assets/images/readme-mockup.png)
 
 ## Planning
 
