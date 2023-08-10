@@ -133,3 +133,17 @@ body {
 .incorrect {
     background: #d02929;
 }
+
+@media(max-width:420px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .select-btns {
+        font-size: 14px;
+    }
+}

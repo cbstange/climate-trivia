@@ -29,7 +29,7 @@ const questions = [
         ],
     },
     {
-        question: " What are some of the direct effects of increased global temperatures?",
+        question: " What are the effects that increase the global temperature?",
         answers: [
             { text: "Rising sea levels", correct: false },
             { text: "Extreme and more frequent hurricanes ", correct: false },
@@ -56,7 +56,7 @@ const questions = [
         ],
     },
     {
-        question: " Since 1990, global forests has shrunk by how many hectares?",
+        question: " Since 1990, global forests have shrunk by how many hectares?",
         answers: [
             { text: "200 million", correct: false },
             { text: "Forrest size has increased ", correct: false },
@@ -64,7 +64,7 @@ const questions = [
             { text: "80 million", correct: true },
         ],
     }, {
-        question: " Which of the following countries emit the most carbon dioxide??",
+        question: " Which of the following countries emit the most carbon dioxide?",
         answers: [
             { text: "USA", correct: false },
             { text: "Russia ", correct: false },
